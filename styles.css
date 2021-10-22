@@ -32,6 +32,10 @@ h1 {
     text-align: center;
 }
 
+/* h2 {
+    text-align: center;
+} */
+
 a {
     text-decoration: none;
     color: white;
@@ -39,4 +43,9 @@ a {
 
 .assignment a:hover {
     color: #4C3070;
+}
+
+blink {
+    font-size: 30px;
+    color:black
 }
