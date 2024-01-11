@@ -32,3 +32,13 @@
     margin: 10px;
     margin-left: 10%;
 }
+
+.table th {
+    padding: 5px;
+    white-space: nowrap;
+    width: 80%;
+    font-size: 150%;
+    color: black;
+    margin: 10px;
+    margin-left: 10%;
+}
