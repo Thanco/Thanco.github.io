@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Layout */
+#main {
+    padding: 15px;
+    background-color: #492947;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    color: #a19090;
+}
+#footer {
+    padding: 15px;
+    background-color: #492947;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    color: #a19090;
+    margin-top: 10px;
+    bottom: 0;
+}
+
+/* Page Content */
+#page-nav {
+    padding: 15px;
+}
+
+/* Table */
+#main table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+#main table td {
+    border: 1px solid #a19090;
+    padding: 5px;
+    white-space: nowrap;
+    margin: 10px;
+    margin-left: 10%;
+}
+#main table tr {
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 10px;
+    margin-left: 10%;
+}
+#main table th {
+    border: 1px solid #a19090;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 10px;
+    margin-left: 10%;
+}
+
+/* Image */
+#images {
+    margin: auto;
+    padding: 10px;
+}
+#images img {
+    margin: auto;
+    border: 2px solid #a19090;
+    padding: 10px;
+    margin-top: 5px;
+    max-height: 200px;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Att List */
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #492947;
+    border-radius: 5px;
+}
+#footer li {
+    padding: 5px;
+}
+
+/* Typography */
+body a {
+    text-decoration: none;
+    background-color: #481845;
+    border-radius: 2px;
+    padding: 5px;
+    color: #a19090;
+}
+body a:hover {
+    background: #0d0031;
+}
+#footer a {
+    padding: 3px;
+}
+#main h1 {
+    margin: 0;
+}
+#page-nav h2 {
+    margin: 0;
+    padding: 0;
+    color: #a19090;
+}
