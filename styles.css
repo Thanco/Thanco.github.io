@@ -4,39 +4,43 @@ body {
 }
 
 /* Layout */
-#main {
-    padding: 15px;
-    background-color: #492947;
+#content {
     width: 80%;
     margin: auto;
-    border-radius: 5px;
-    color: #a19090;
+    color: #2d102b;
+    text-align: center;
 }
 
 /* Page Content */
-#nav-list {
-    list-style-type: decimal;
+#main-content section {
+    background-color: #492947;
+    max-width: 350px;
+    margin: auto;
 }
-#nav-list li {
-    margin-top: 15px;
+#main-content a {
+    color: #a19090;
+    text-decoration: none;
+}
+#main-content p {
+    padding: 10px;
 }
 
 /* Typography */
-#main h1 {
-    margin: 0;
+#main-header p {
+    text-align: left;
 }
-#site-nav h2 {
-    margin: 0;
-    padding: 0;
-    color: #a19090;
+#main-content h2 {
+    padding: 10px;
 }
-#nav-list a {
-    text-decoration: none;
-    background-color: #481845;
-    border-radius: 2px;
-    padding: 5px;
-    color: #a19090;
+#main-content h3 {
+    padding: 10px;
 }
-#nav-list a:hover {
-    background: #0d0031;
+
+@media screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+    .columns section {
+        flex: 1;
+    }    
 }
