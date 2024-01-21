@@ -47,6 +47,8 @@ body {
 #main-nav a {
     color: #755e75;
     text-decoration: none;
+    display: block;
+    width: 100%;
 }
 
 /* Links */
@@ -85,7 +87,7 @@ body {
 #lower-panel {
     padding: 10px;
 }
-.pane {
+article {
     padding: 25px;
 }
 

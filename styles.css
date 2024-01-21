@@ -24,6 +24,10 @@ body {
 #main-content p {
     padding: 10px;
 }
+#main-content img {
+    max-width: 350px;
+    max-height: 150px;
+}
 
 /* Typography */
 #main-header p {
