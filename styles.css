@@ -15,7 +15,11 @@ body {
 #main-content section {
     background-color: #492947;
     max-width: 350px;
-    margin: auto;
+    margin: 5px auto 5px auto;
+    border-radius: 10px;
+}
+#main-content section:hover {
+    background-color: #381b54;
 }
 #main-content a {
     color: #a19090;
@@ -37,12 +41,14 @@ body {
     padding: 10px;
 }
 #main-content h3 {
-    padding: 10px;
+    margin: 0px;
+    padding: 25px;
 }
 
 @media screen and (min-width: 768px) {
     .columns {
         display: flex;
+        flex-wrap: wrap;
     }
     .columns section {
         flex: 1;

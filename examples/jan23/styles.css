@@ -1,0 +1,37 @@
+:root {
+    --main-color: #ff0000;
+    --main-color-rgb: 255, 0, 0;
+    --main-color-rgba: 255, 0, 0, 0.5;
+}
+
+.tests {
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: static; default */
+
+    /* position: absolute; takes up no space in the dom, relative to the page*/
+    /* use top, bottom, right, left to push lengths from edge of screen */
+
+    
+    /* position: relative; relative to the normal position */
+    /* reserves space in the dom */
+
+    /* position: fixed; relative to the viewport */
+    /* position: sticky; relative to the viewport, but only when scrolling */
+    /* position: absolute; */
+    /* color: var(--main-color); */
+    animation: aa 2s infinite; 
+    /* display: block; */
+    text-transform: uppercase;
+}
+
+@keyframes aa {
+    0% {
+        color: var(--main-color);
+    }
+    50% {
+        color: black;
+        }
+    100% {
+        color: var(--main-color);
+    }
+}
