@@ -1,0 +1,82 @@
+:root {
+    --rotates: 0deg;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #755e75;
+}
+
+/* Layout */
+#content {
+    color: #2d102b;
+    text-align: center;
+}
+
+/* Page Content */
+#main-content section {
+    background-color: #492947;
+    color: #a19090;
+    height: 750px;
+    margin: auto;
+    padding: 0px;
+    border: #000 solid 1px;
+}
+#main-content img {
+    max-width: 80%;
+    width: 256px;
+    height: 256px;
+}
+#main-content p {
+    padding: 10px;
+    margin: 0px;
+}
+
+/* Rotation Section */
+#main-content input {
+    appearance: none;
+    width: 95%;
+    background-color: #755e75;
+}
+#main-content input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #2d102b;
+    cursor: pointer;
+}
+#img-rotate {
+    transform: rotate(var(--rotate));
+}
+
+/* Star Section */
+#main-content #sec-stars {
+    background-color: #554bc4;
+}
+#star-space img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Typography */
+#main-header p {
+    text-align: left;
+}
+#main-content h2 {
+    padding: 10px;
+}
+#main-content h3 {
+    margin: 0px;
+    padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+    .columns section {
+        max-width: 25%;
+        flex: 1;
+    }    
+}
