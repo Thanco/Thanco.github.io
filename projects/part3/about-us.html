@@ -58,18 +58,78 @@
             </nav>
         </header>
         
-        <div class="centered-div">
-            <img src="https://place-hold.it/1500x500" alt="Large Image">
-            <div class="small-images">
-                <img src="https://place-hold.it/500x200" alt="Small Image 1">
-                <img src="https://place-hold.it/500x200" alt="Small Image 2">
+        <main>
+            <div id="about-us-content">
+                <h1>Good Food, Real People</h1>
+                <div class="review flex-column">
+                    <div class="five flex">
+                        <div>
+                            <img src="https://place-hold.it/50" alt="Profile Picture">
+                        </div>
+                        <div>
+                            <h2>Jon Smith</h2>
+                            <div class="flex">
+                                <img src="https://place-hold.it/25" alt="Star" class="rating-star">
+                                <img src="https://place-hold.it/25" alt="Star" class="rating-star">
+                                <img src="https://place-hold.it/25" alt="Star" class="rating-star">
+                                <img src="https://place-hold.it/25" alt="Star" class="rating-star">
+                                <img src="https://place-hold.it/25" alt="Empty Star" class="rating-star">
+                            </div>
+                            <p>Review... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam eos laboriosam neque, nulla delectus debitis hic. Tempora, unde repellendus asperiores eligendi ut, mollitia quaerat tenetur, id accusamus aspernatur at! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est aliquid ad quibusdam deserunt, expedita suscipit illum alias architecto dolor vel! Sunt neque eius inventore libero numquam. Tempora cum laborum ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis saepe suscipit animi. Possimus nemo sequi totam nulla iste sed, aliquid iure ea expedita, illo atque consequuntur, neque dolores consequatur dignissimos.</p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <img src="https://place-hold.it/300" alt="Image">
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="one">
+                        <h1>Tell us what you think:</h1>
+                        <form>
+                            <ul>
+                                <li>
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name">
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email">
+                                </li>
+                                <li>
+                                    <label for="review">Review:</label>
+                                    <textarea id="review" name="review"></textarea>
+                                </li>
+                                <li>
+                                    <label for="rating">Rating:</label>
+                                    <select id="rating" name="rating">
+                                        <option value="-1">Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="image">Image:</label>
+                                    <input type="file" id="image" name="image" accept="*.jpg">
+                                </li>
+                                <li>
+                                    <input type="submit" value="Submit">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="one right">
+                        <h1>Contact Information</h1>
+                        <p>Email: <a href="mailto:th@nco.host">th@nco.host</a>
+                        <p>Phone: 123-456-7890</p>
+                        <p>Address: 1234 Main St, City, State, 12345</p>
+                        <p>Hours: 9am-9pm</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <!-- Rest of the homepage content goes here -->
-
-        
-        
+        </main>
     </body>
 <script src="./script.js"></script>
 </html>

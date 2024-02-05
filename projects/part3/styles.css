@@ -5,6 +5,7 @@
     --main-border-color: #000;
     --nav-text-color: #000;
     --nav-current-text-color: #818181;
+    --secodnary-bg-color: #eaeaea;
 }
 
 body {
@@ -15,16 +16,19 @@ body {
 
 /* Header Nav Bar */
 header {
-    text-align: center;
     font-size: large;
     border-bottom: var(--main-border-color) 1px solid;
     padding: 10px;
 }
 header section {
     display: inline;
-    text-align: space-between;
     vertical-align: middle;
     padding-right: 25px;
+}
+#main-nav-hamburger img {
+    margin-top: 50px;
+    position: absolute;
+    right: 10px;
 }
 header div {
     vertical-align: middle;
@@ -38,7 +42,7 @@ header div a {
     padding-right: 10px;
     line-height: 0px;
 }
-header div img {
+#main-nav-links img {
     padding: 5px;
     vertical-align: middle;
     width: 50px;
@@ -114,6 +118,12 @@ header p {
 }
 .three {
     flex: 3;
+}
+.five {
+    flex: 5;
+}
+.ten {
+    flex: 10;
 }
 #menu-footer {
     width: 100%;
@@ -204,12 +214,67 @@ header p {
 }
 
 /* About Us */
-
+#about-us-content {
+    padding: 15px;
+    margin: auto;
+    width: 85%;
+}
+.review {
+    background-color: var(--secodnary-bg-color);
+}
+.review img {
+    padding: 10px;
+}
+.rating-star {
+    padding: 5px;
+}
+#about-us-content ul {
+    padding: 10px;
+    list-style: none;
+}
 
 /* Cart */
-
+#cart-content {
+    padding: 15px;
+    margin: auto;
+    width: 85%;
+}
+.cart-item {
+    padding: 10px;
+    border: var(--main-border-color) 1px solid;
+}
+.cart-item img {
+    margin: 25px;
+}
+.quantity-controls p {
+    margin-top: 10px;
+}
+.quantity-controls button {
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+}
+.cart-item button p {
+    margin: 0;
+    padding: 0;
+}
+.prices {
+    padding: 10px;
+}
+#btn-checkout {
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    vertical-align: middle;
+    border: var(--main-border-color) 1px solid;
+    background-color: var(--main-bg-color);
+    color: var(--nav-text-color);
+}
 
 @media screen and (orientation: landscape) {
+    header {
+        text-align: center;
+    }
     header section {
         display: inline-block;
     }
