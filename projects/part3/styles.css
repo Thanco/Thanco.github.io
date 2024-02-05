@@ -118,8 +118,8 @@ header p {
 #menu-footer {
     width: 100%;
     background-color: var(--main-bg-color);
-    position: fixed;
-    bottom:0;
+    position:sticky;
+    bottom: 0;
 }
 #menu-cart-preview {
     border-top: var(--main-border-color) 1px solid;
@@ -165,12 +165,43 @@ header p {
     border: var(--main-border-color) 1px solid;
 }
 
-
 /* Culture */
-
+#culture-content {
+    padding: 15px;
+    margin: auto;
+    width: 85%;
+}
+#culture-content article {
+    padding: 25px;
+}
 
 /* Careers */
-
+#careers-content {
+    padding: 15px;
+    margin: auto;
+    width: 85%;
+}
+#careers-content table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+#careers-content table th {
+    text-align: left;
+    padding: 10px;
+    border: var(--main-border-color) 1px solid;
+}
+#careers-content table td {
+    padding: 10px;
+    border: var(--main-border-color) 1px solid;
+}
+#careers-content ul {
+    padding: 10px;
+    list-style: none;
+}
+#careers-benefits {
+    padding-right: 30px;
+}
 
 /* About Us */
 
@@ -194,7 +225,6 @@ header p {
     header #main-nav-hamburger {
         display: none;
     }
-
     .flex-column {
         display: flex;
         flex-wrap: wrap;
@@ -205,15 +235,6 @@ header p {
     #locations-sublinks {
         display: flex;
     }
-
-    /* Menu */
-
-
-    /* Culture */
-
-
-    /* Careers */
-
 
     /* About Us */
 
