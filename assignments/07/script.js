@@ -27,7 +27,7 @@ slider.addEventListener('input', function() {
 const starSection = document.getElementById("star-space");
 const root = document.querySelector(":root");
 root.addEventListener('click', function() {
-    if (starSection.childElementCount >= 8) {
+    if (starSection.childElementCount >= 6) {
         console.log("star limit reached");
         return;
     }

@@ -1,0 +1,223 @@
+:root {
+    --badge-color: #f00;
+    --badge-text-color: #fff;
+    --main-bg-color: #fff;
+    --main-border-color: #000;
+    --nav-text-color: #000;
+    --nav-current-text-color: #818181;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Nav Bar */
+header {
+    text-align: center;
+    font-size: large;
+    border-bottom: var(--main-border-color) 1px solid;
+    padding: 10px;
+}
+header section {
+    display: inline;
+    text-align: space-between;
+    vertical-align: middle;
+    padding-right: 25px;
+}
+header div {
+    vertical-align: middle;
+}
+header a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+header div a {
+    display: flex;
+    padding-right: 10px;
+    line-height: 0px;
+}
+header div img {
+    padding: 5px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+header p {
+    padding: 10px;
+}
+#current-page {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--nav-current-text-color);
+}
+.hide-nav-links {
+    display: none;
+}
+
+
+/* Index */
+#main-img {
+    text-align: center;
+    width: 100%;
+}
+#main-content img {
+    display: block;
+    margin: auto;
+}
+#sub-img {
+    width: 100%;
+    text-align: center;
+}
+#sub-img img {
+    max-width: 90%;
+    height: auto;
+    padding: 10px;
+}
+
+/* Locations */
+#locations-content {
+    text-align: center;
+    margin: auto;
+    width: 85%;
+}
+#locations-sublinks img {
+    max-width: 95%;
+}
+
+/* Location */
+#location-content {
+    text-align: center;
+    margin: auto;
+}
+#location-content img {
+    width: 98%;
+    height: auto;
+}
+
+/* Menu */
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.flex {
+    display: flex;
+}
+.one {
+    flex: 1;
+}
+.two {
+    flex: 2;
+}
+.three {
+    flex: 3;
+}
+#menu-footer {
+    width: 100%;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    bottom:0;
+}
+#menu-cart-preview {
+    border-top: var(--main-border-color) 1px solid;
+    padding: 10px;
+}
+#footer-cart-items {
+    display: flex;
+}
+.footer-cart-item {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
+.footer-cart-item p {
+    text-align: center;
+    margin: 0;
+}
+.footer-cart-number-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--badge-color);
+    color: var(--badge-text-color);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: small;
+}
+#menu-main-content {
+    margin: auto;
+    width: 80%;
+}
+.menu-item {
+    margin: 10px;
+    border: var(--main-border-color) 1px solid;
+}
+.menu-item-text {
+    padding: 10px;
+}
+#menu-item-details {
+    margin: 10px;
+    padding: 15px;
+    border: var(--main-border-color) 1px solid;
+}
+
+
+/* Culture */
+
+
+/* Careers */
+
+
+/* About Us */
+
+
+/* Cart */
+
+
+@media screen and (orientation: landscape) {
+    header section {
+        display: inline-block;
+    }
+    header div {
+        display: inline-block;
+    }
+    header nav {
+        display: inline-block;
+    }
+    .hide-nav-links {
+        display: inline-block;
+    }
+    header #main-nav-hamburger {
+        display: none;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Locations */
+    #locations-sublinks {
+        display: flex;
+    }
+
+    /* Menu */
+
+
+    /* Culture */
+
+
+    /* Careers */
+
+
+    /* About Us */
+
+
+    /* Cart */
+
+}
