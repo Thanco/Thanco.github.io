@@ -1,5 +1,3 @@
-console.log('Hello, world!');
-
 // Change image on click
 const imageChange = document.getElementById("img-change");
 imageChange.addEventListener('click', function() {

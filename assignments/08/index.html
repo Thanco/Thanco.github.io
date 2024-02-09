@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1>Assignment 8</h1>
+            <h2>If Statements (Sort of)</h2>
+        </header>
+        <main id="main-content">
+            <div id="navigation">
+                <a id="main-nav-hamburger">▲</a>
+                <nav id="main-nav-links" class="hidden">
+                    <div>
+                        <a id="command-label">Exercise 1</a>
+                        <a id="yoga-label">Exercise 2</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="columns">
+                <section id="command-section">
+                    <h3>Enter Command</h3>
+                    <ul>
+                        <li>b: Read a book</li>
+                        <li>c: Act like a clown</li>
+                        <li>p: Have a birthday party</li>
+                        <li>r: Walk in the rain</li>
+                        <li>s: Shovel up some dirt</li>
+                        <li>w: Go to work</li>
+                    </ul>
+                    <input type="text" id="command-input" placeholder="Enter a command">
+                    <div><img src="./images/command/original.jpg" alt="Command Image" id="command-image"></div>
+                    <p class="img-credit">Image by <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a></p>                
+                </section>
+                <section id="yoga-section" class="hidden">
+                    <h3>Yoga Slider</h3>
+                    <div><img src="./images/yoga/yoga1.jpg" alt="Yoga Image" id="yoga-image"></div>
+                    <input type="range" id="yoga-slider" min="0" max="7" value="0">
+                    <p class="img-credit">Image by <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20832062.htm#query=stick%20figure%20run&position=46&from_view=search&track=ais&uuid=22e87991-ee06-4dc2-8ea3-464d535e1a63">Freepik</a></p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Terry Hancock</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
