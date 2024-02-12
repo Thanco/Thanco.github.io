@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Victorious Pizza</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="./index.html">
+                    <img src="https://place-hold.it/100" alt="Logo">
+                </a>
+            </section>
+            <section>
+                <a id="main-nav-hamburger">
+                    <img src="https://place-hold.it/50" alt="Hamburger">
+                </a>
+            </section>
+            <nav id="main-nav-links" class="hide-nav-links">
+                <div>
+                    <div>
+                        <a href="./locations.html">
+                            <img src="https://place-hold.it/50" alt="Icon">
+                            <p>Locations</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./menu.html">
+                            <img src="https://place-hold.it/50" alt="Icon">
+                            <p>Menu</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./culture.html">
+                            <img src="https://place-hold.it/50" alt="Icon">
+                            <p>Culture</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./careers.html">
+                            <img src="https://place-hold.it/50" alt="Icon">
+                            <p>Careers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./about-us.html">
+                            <img src="https://place-hold.it/50" alt="Icon">
+                            <p>About Us</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./cart.html">
+                            <img src="https://place-hold.it/50" alt="Icon">
+                            <p id="current-page">Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="cart-content">
+                <section>
+                    <div class="cart-item flex">
+                        <div class="one flex">
+                            <div>
+                                <img src="https://place-hold.it/100" alt="Item Image">
+                            </div>
+                            <div>
+                                <h2>Item Name</h2>
+                                <p>Item Description</p>
+                                <p>Item Price</p>
+                                <div class="quantity-controls flex">
+                                    <button>
+                                        <p>-</p>
+                                    </button>
+                                    <p>4</p>
+                                    <button>
+                                        <p>+</p>
+                                    </button>
+                                </div>
+                                <button>
+                                    <p>Remove</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="one prices right">
+                            <h3>$XX.XX</h3>
+                            <p>$XX.XX</p>
+                            <p>$XX.XX</p>
+                            <p>$XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="cart-item flex">
+                        <div class="one flex">
+                            <div>
+                                <img src="https://place-hold.it/100" alt="Item Image">
+                            </div>
+                            <div>
+                                <h2>Item Name</h2>
+                                <p>Item Description</p>
+                                <p>Item Price</p>
+                                <div class="quantity-controls flex">
+                                    <button>
+                                        <p>-</p>
+                                    </button>
+                                    <p>7</p>
+                                    <button>
+                                        <p>+</p>
+                                    </button>
+                                </div>
+                                <button>
+                                    <p>Remove</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="one prices right">
+                            <h3>$XX.XX</h3>
+                            <p>$XX.XX</p>
+                            <p>$XX.XX</p>
+                            <p>$XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="cart-item flex">
+                        <div class="one flex">
+                            <div>
+                                <img src="https://place-hold.it/100" alt="Item Image">
+                            </div>
+                            <div>
+                                <h2>Item Name</h2>
+                                <p>Item Description</p>
+                                <p>Item Price</p>
+                                <div class="quantity-controls flex">
+                                    <button>
+                                        <p>-</p>
+                                    </button>
+                                    <p>12</p>
+                                    <button>
+                                        <p>+</p>
+                                    </button>
+                                </div>
+                                <button>
+                                    <p>Remove</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="one prices right">
+                            <h3>$XX.XX</h3>
+                            <p>$XX.XX</p>
+                            <p>$XX.XX</p>
+                            <p>$XX.XX</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="flex">
+                        <div class="one">
+                            <h3>Subtotal</h3>
+                            <h4>Tax</h4>
+                            <h2>Total</h2>
+                        </div>
+                        <div class="one right">
+                            <h3>$XX.XX</h3>
+                            <h4>$XX.XX</h4>
+                            <h2>$XX.XX</h2>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="flex">
+                        <div class="one">
+                            <h2>Delivery Options</h2>
+                            <div>
+                                <div>
+                                    <input type="radio" id="delivery" name="delivery" value="delivery">
+                                    <label for="delivery">Delivery</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                                    <label for="pickup">Pickup</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="curbside" name="delivery" value="curbside">
+                                    <label for="curbside">Curbside Pickup</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one right">
+                            <button id="btn-checkout">
+                                <p>Checkout</p>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+<script src="./script.js"></script>
+</html>
