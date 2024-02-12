@@ -221,6 +221,10 @@ header p {
 #culture-content article {
     padding: 25px;
 }
+#culture-content img {
+    width: 500px;
+    height: 500px;
+}
 
 /* Careers */
 #careers-content {
@@ -266,6 +270,10 @@ header p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+.review-user-img {
+    width: 300px;
+    height: 300px;
 }
 .rating-star {
     width: 25px;
