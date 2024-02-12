@@ -4,9 +4,9 @@ button.addEventListener('click', function() {
     document.getElementById('main-nav-links').classList.toggle('hide-nav-links');
 });
 
-const currentPage = document.getElementById('current-page');
-switch (currentPage.innerHTML) {
-    case 'Menu':
+console.log(window.location.href);
+switch (window.location.href.split('/').reverse()[0]) {
+    case 'menu.html':
         const btnCart = document.getElementById('btn-cart');
         btnCart.addEventListener('click', function() {
             window.location.href = 'cart.html';
