@@ -283,6 +283,9 @@ header p {
     padding: 10px;
     list-style: none;
 }
+#about-us-content li {
+    padding: 10px 0px;
+}
 #about-us-content a {
     color: var(--heading-text-color);
 }
