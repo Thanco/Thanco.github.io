@@ -29,14 +29,17 @@ const selectTwo = () => {
 
 // Bounce Ball
 let started = false;
-const startButton = document.getElementById('btn-start');
+let interval;
+const btnStart = document.getElementById('btn-start');
 const toggleStart = () => {
     started = !started;
     if (started) {
-        startButton.innerHTML = 'Stop';
+        btnStart.innerHTML = 'Stop';
+        interval = setInterval(changeBall, 1);
         return;
     }
-    startButton.innerHTML = 'Start';
+    btnStart.innerHTML = 'Start';
+    clearInterval(interval);
 }
 
 const root = document.querySelector(':root')
@@ -44,9 +47,9 @@ let ballDist = 0;
 let direction = 'down';
 const maxDist = document.getElementById('bounce-area').offsetHeight - document.getElementById('ball').offsetHeight;
 const changeBall = () => {
-    if (!started) {
-        return;
-    }
+    // if (!started) {
+    //     return;
+    // }
     if (ballDist < maxDist) {
         switch (direction) {
             case 'down':
@@ -87,8 +90,7 @@ window.onload = () => {
     document.getElementById('label-1').onclick = selectOne;
     document.getElementById('label-2').onclick = selectTwo;
 
-    startButton.onclick = toggleStart;
-    setInterval(changeBall, 1);
+    btnStart.onclick = toggleStart;
 
     document.querySelectorAll('#yoga-list li').forEach((li, index) => {
         li.onclick = setDesc.bind(null, index);
