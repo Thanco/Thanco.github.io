@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #755e75;
+    text-align: center;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    color: #2d102b;
+}
+
+#content {
+    color: #a19090;
+    text-decoration: none;
+    width: 80%;
+    margin: auto;
+}
+#content section {
+    background-color: #492947;
+    border: #000 1px solid;
+    margin: 10px 0;
+    border-bottom: 0;
+    max-width: 100%;
+}
+#content img {
+    max-width: 90%;
+    max-height: auto;
+    margin: 10px;
+    border: #000 1px solid;
+}
+#content p {
+    padding: 0;
+    margin: 10px;
+}
+#content a {
+    color: #a19090;
+}
+
+#modal-content {
+    border-radius: 25px;
+    background: #492947;
+    height: 450px;
+    max-height: 80%;
+}
+#modal-content img {
+    max-width: auto;
+    max-height: 200px;
+    margin: 10px;
+    border: #000 1px solid;
+}
+
+.modal-background {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    display: block;
+}
+.modal-foreground {
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    overflow: auto;
+    margin: auto;
+}
+.modal-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+
+
+/* Typography */
+#content p {
+    padding: 0;
+    margin: 10px;
+}
+
+@media screen and (orientation: landscape){
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #content section {
+        width: 400px;
+    }
+    #content img {
+        max-width: 300px;
+        max-height: auto;
+        margin-top: 10px;
+        border: #000 1px solid;
+    }
+}
