@@ -22,6 +22,8 @@ header {
     margin: 10px 0;
     border-bottom: 0;
     max-width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
 }
 #content img {
     max-width: 90%;
