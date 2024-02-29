@@ -1,0 +1,94 @@
+:root {
+    --light-text-color: #a19090;
+    --dark-text-color: #2d102b;
+    --light-background-color: #755e75;
+    --dark-background-color: #492947;
+    --dark-accent-color: #211131;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #755e75;
+}
+
+/* Layout */
+#content {
+    width: 80%;
+    margin: auto;
+    color: var(--dark-text-color);
+    text-align: center;
+}
+
+.house {
+    background-color: var(--dark-background-color);
+    color: var(--light-text-color);
+    border-radius: 10px;
+    min-width: 200px;
+}
+.house-details {
+    background-color: var(--dark-accent-color);
+}
+.house-details p {
+    padding: 5px;
+}
+.house-floorplans img {
+    max-width: 90%;
+    height: auto;
+    padding: 10px;
+}
+
+.house-details {
+    text-align: left;
+    height: auto;
+}
+.info {
+    height: auto;
+    max-width: 100%;
+    min-width: 200px;
+    padding: 0px 10px;
+}
+.house-details {
+    display: flex;
+    flex-direction: column;
+}
+.main-image {
+    max-width: 100%;
+    min-width: 60%;
+    height: 100%;
+    margin: auto;
+    flex: 1;
+}
+
+/* Typography */
+#main-header p {
+    text-align: left;
+}
+#main-content h2 {
+    padding: 10px;
+}
+#main-content h3 {
+    margin: 0px;
+    padding: 25px;
+}
+
+@media screen and (orientation: landscape) {
+    .house-details {
+        flex-direction: row;
+    }
+    .info {
+        flex: 4;
+    }
+    .main-image {
+        max-width: auto;
+        min-width: auto;
+        height: 100%;
+        margin: 0;
+        flex: 1;
+    }
+    .house-floorplans {
+        display: flex;
+    }
+    .floorplan {
+        flex: 1
+    }
+}
