@@ -1,0 +1,115 @@
+[
+    {
+        "_id": 0,
+        "name": "Classic Pizza",
+        "type": "pizza",
+        "price": 16.99,
+        "shortDescription": "The cornerstone of Victorious Pizza's menu. Our classic pizza is made with our signature hand-tossed dough, topped with our special tomato sauce, and a blend of mozzarella, parmesan, and romano cheeses. It's the perfect pizza for any occasion.",
+        "longDescription": "The Pizza is a classic dish that has been around for centuries. It is a staple of Italian cuisine and is loved by people all over the world. The Pizza is a simple dish that is made from dough, tomato sauce, cheese, and various toppings. It is a versatile dish that can be customized to suit any taste. Whether you like your pizza with meat, vegetables, or a little bit of everything, the Pizza is the perfect choice. It is a delicious and satisfying dish that is perfect for any occasion. Whether you are having a party, a family dinner, or just a casual meal, the Pizza is the perfect choice.",
+        "allergens": [
+            "Wheat",
+            "Dairy",
+            "Soy"
+        ],
+        "image": "big-pizza.webp"
+    },
+    {
+        "_id": 1,
+        "name": "The Behemoth",
+        "type": "pizza",
+        "price": 24.99,
+        "shortDescription": "Our Behemoth pizza is a feast for the senses. It's made with our signature hand-tossed dough, topped with our special tomato sauce, a blend of mozzarella, parmesan, and romano cheeses, and a variety of meats and vegetables. It's the perfect pizza for anyone with a big appetite.",
+        "longDescription": "The Behemoth is a pizza that is perfect for anyone with a big appetite. It is made with our signature hand-tossed dough, topped with our special tomato sauce, a blend of mozzarella, parmesan, and romano cheeses, and a variety of meats and vegetables. It is a feast for the senses that is perfect for any occasion. Whether you are having a party, a family dinner, or just a casual meal, the Behemoth is the perfect choice. It is a delicious and satisfying dish that is perfect for anyone with a big appetite.",
+        "allergens": [
+            "Wheat",
+            "Dairy",
+            "Soy"
+        ],
+        "image": "the-behemoth.webp"
+    },
+    {
+        "_id": 2,
+        "name": "Cheeseburger",
+        "type": "burger",
+        "price": 7.99,
+        "shortDescription": "Our cheeseburger is a classic American favorite. It's made with a juicy beef patty, cheddar cheese, lettuce, tomato, and pickles, all on a toasted sesame seed bun. It's the perfect meal for lunch or dinner.",
+        "longDescription": "The Cheeseburger is a classic American favorite that is perfect for lunch or dinner. It is made with a juicy beef patty, cheddar cheese, lettuce, tomato, and pickles, all on a toasted sesame seed bun. It is a delicious and satisfying meal that is perfect for any occasion. Whether you are having a party, a family dinner, or just a casual meal, the Cheeseburger is the perfect choice. It is a classic dish that is loved by people all over the world.",
+        "allergens": [
+            "Wheat",
+            "Dairy",
+            "Sesame"
+        ],
+        "image": "burger.webp"
+    },
+    {
+        "_id": 3,
+        "name": "Chicken Tenders",
+        "type": "entree",
+        "price": 4.99,
+        "shortDescription": "Our chicken tenders are made with all-white meat chicken, breaded and fried to perfection. They're the perfect meal for anyone who loves chicken.",
+        "longDescription": "The Chicken Tenders are made with all-white meat chicken, breaded and fried to perfection. They are the perfect meal for anyone who loves chicken. Whether you are having a party, a family dinner, or just a casual meal, the Chicken Tenders are the perfect choice. They are a delicious and satisfying dish that is perfect for any occasion.",
+        "allergens": [
+            "Dairy",
+            "Soy",
+            "Peanuts"
+        ],
+        "image": "tanders.webp"
+    },
+    {
+        "_id": 4,
+        "name": "Fries",
+        "type": "side",
+        "price": 3.99,
+        "shortDescription": "Our fries are made from fresh potatoes, cut into thin strips and fried to perfection. They're the perfect side dish for any meal.",
+        "longDescription": "The Fries are made from fresh potatoes, cut into thin strips and fried to perfection. They are the perfect side dish for any meal. Whether you are having a party, a family dinner, or just a casual meal, the Fries are the perfect choice. They are a delicious and satisfying dish that is perfect for any occasion.",
+        "allergens": [
+            "Soy",
+            "Peanuts",
+            "Gluten"
+        ],
+        "image": "fries.webp"
+    },
+    {
+        "_id": 5,
+        "name": "Salad",
+        "type": "side",
+        "price": 3.99,
+        "shortDescription": "Our salad is made with fresh lettuce, tomatoes, cucumbers, and carrots, topped with your choice of dressing. It's the perfect side dish for any meal.",
+        "longDescription": "The Salad is made with fresh lettuce, tomatoes, cucumbers, and carrots, topped with your choice of dressing. It is the perfect side dish for any meal. Whether you are having a party, a family dinner, or just a casual meal, the Salad is the perfect choice. It is a delicious and satisfying dish that is perfect for any occasion.",
+        "allergens": [
+            "Soy",
+            "Dairy",
+            "Nuts"
+        ],
+        "image": "salad.webp"
+    },
+    {
+        "_id": 6,
+        "name": "Cocktail",
+        "type": "drink",
+        "price": 6.99,
+        "shortDescription": "Our cocktail is made with a blend of fruit juices and your choice of alcohol. It's the perfect drink for any occasion.",
+        "longDescription": "The Cocktail is made with a blend of fruit juices and your choice of alcohol. It is the perfect drink for any occasion. Whether you are having a party, a family dinner, or just a casual meal, the Cocktail is the perfect choice. It is a delicious and satisfying drink that is perfect for any occasion.",
+        "allergens": [
+            "Alcohol",
+            "Fruit",
+            "More Alcohol (Careful)"
+        ],
+        "image": "cocktail.webp"
+    },
+    {
+        "_id": 7,
+        "name": "Water",
+        "type": "drink",
+        "price": 0.99,
+        "shortDescription": "Our water is pure and refreshing. It's the perfect drink for any occasion.",
+        "longDescription": "The Water is pure and refreshing. It is the perfect drink for any occasion. Whether you are having a party, a family dinner, or just a casual meal, the Water is the perfect choice. It is a delicious and satisfying drink that is perfect for any occasion.",
+        "allergens": [
+            "Water",
+            "Water",
+            "Water",
+            "More Water (Careful)"
+        ],
+        "image": "water.webp"
+    }
+]

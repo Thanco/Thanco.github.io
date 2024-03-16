@@ -32,6 +32,12 @@ body {
     max-width: 350px;
     max-height: 150px;
 }
+.multi-link {
+    padding-bottom: 10px;
+}
+.multi-link div {
+    margin: 5px;
+}
 
 /* Typography */
 #main-header p {
@@ -47,7 +53,7 @@ body {
 .multi-link {
     color: #a19090;
 }
-.multi-link a {
+.underline {
     text-decoration: underline;
 }
 
