@@ -11,7 +11,7 @@
             "Dairy",
             "Soy"
         ],
-        "image": "big-pizza.webp"
+        "imageName": "big-pizza.webp"
     },
     {
         "_id": 1,
@@ -25,7 +25,7 @@
             "Dairy",
             "Soy"
         ],
-        "image": "the-behemoth.webp"
+        "imageName": "the-behemoth.webp"
     },
     {
         "_id": 2,
@@ -39,7 +39,7 @@
             "Dairy",
             "Sesame"
         ],
-        "image": "burger.webp"
+        "imageName": "burger.webp"
     },
     {
         "_id": 3,
@@ -53,7 +53,7 @@
             "Soy",
             "Peanuts"
         ],
-        "image": "tanders.webp"
+        "imageName": "tanders.webp"
     },
     {
         "_id": 4,
@@ -67,7 +67,7 @@
             "Peanuts",
             "Gluten"
         ],
-        "image": "fries.webp"
+        "imageName": "fries.webp"
     },
     {
         "_id": 5,
@@ -81,7 +81,7 @@
             "Dairy",
             "Nuts"
         ],
-        "image": "salad.webp"
+        "imageName": "salad.webp"
     },
     {
         "_id": 6,
@@ -95,7 +95,7 @@
             "Fruit",
             "More Alcohol (Careful)"
         ],
-        "image": "cocktail.webp"
+        "imageName": "cocktail.webp"
     },
     {
         "_id": 7,
@@ -110,6 +110,6 @@
             "Water",
             "More Water (Careful)"
         ],
-        "image": "water.webp"
+        "imageName": "water.webp"
     }
 ]

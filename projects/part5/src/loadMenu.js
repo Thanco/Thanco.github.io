@@ -1,24 +1,22 @@
 class MenuItem {
-    constructor(name, type, price, shortDescription, longDescription, allergens, image) {
-    this.name = name;
-    this.type = type;
-    this.price = price;
-    this.shortDescription = shortDescription;
-    this.longDescription = longDescription;
-    this.allergens = allergens;
-    this.image = this.getImage(image);
+    constructor(name, type, price, shortDescription, longDescription, allergens, imageName) {
+        this.name = name;
+        this.type = type;
+        this.price = price;
+        this.shortDescription = shortDescription;
+        this.longDescription = longDescription;
+        this.allergens = allergens;
+        this.imageName = imageName;
     }
 
-    getImage(image) {
-        return `./img/menu/${image}`;
+    get image() {
+        return `./img/menu/${this.imageName}`;
     }
 
     get allergenList() {
-        const allergens = this.allergens.map(allergen => {
+        return this.allergens.map(allergen => {
             return allergen;
         }).join(', ');
-        allergens = allergens.slice(0, allergens.length - 2);
-        return allergens;
     }
 
     get display() {
@@ -39,12 +37,15 @@ class MenuItem {
 
 const getMenu = async () => {
     const menuJson = await fetch('./json/menu.json');
+    if (!menuJson.ok) {
+        throw new Error('Failed to fetch menu.');
+    }
     const menu = await menuJson.json();
     return menu.map(item => {
-        return new MenuItem(item.name, item.type, item.price, item.short_description, item.long_description, item.allergens, item.image);
+        return new MenuItem(item.name, item.type, item.price, item.shortDescription, item.longDescription, item.allergens, item.imageName);
     });
 };
 
 getMenu().then(menu => {
-    document.getElementById('menu-main-content').innerHTML = menu.map(item => item.display).join('');
+    document.getElementById('menu-items').innerHTML = menu.map(item => item.display).join('');
 });
