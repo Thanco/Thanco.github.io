@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Victorious Pizza</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="./index.html">
+                    <img src="./img/header/logo.webp" alt="Logo" id="logo-img">
+                </a>
+            </section>
+            <section>
+                <a id="main-nav-hamburger">
+                    <img src="./img/header/hamburger.webp" alt="Hamburger">
+                </a>
+            </section>
+            <nav id="main-nav-links" class="hide-nav-links">
+                <div>
+                    <div>
+                        <a href="./locations.html">
+                            <img src="./img/header/locations.webp" alt="Icon">
+                            <p>Locations</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./menu.html">
+                            <img src="./img/header/menu.webp" alt="Icon">
+                            <p>Menu</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./culture.html">
+                            <img src="./img/header/culture.webp" alt="Icon">
+                            <p>Culture</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./careers.html">
+                            <img src="./img/header/careers.webp" alt="Icon">
+                            <p>Careers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./about-us.html">
+                            <img src="./img/header/about-us.webp" alt="Icon">
+                            <p>About Us</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./cart.html">
+                            <img src="./img/header/cart.webp" alt="Icon">
+                            <p id="current-page">Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="cart-content">
+                <section>
+                    <div class="cart-item flex">
+                        <div class="one flex">
+                            <div>
+                                <img src="./img/menu/big-pizza.webp" alt="Item Image">
+                            </div>
+                            <div>
+                                <h2>Classic Pizza</h2>
+                                <p>$17.00</p>
+                                <div class="quantity-controls flex">
+                                    <button>
+                                        <p>-</p>
+                                    </button>
+                                    <p>4</p>
+                                    <button>
+                                        <p>+</p>
+                                    </button>
+                                </div>
+                                <button>
+                                    <p>Remove</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="one prices right">
+                            <h3>$68.00</h3>
+                            <p>+ $14.50</p>
+                        </div>
+                    </div>
+                    <div class="cart-item flex">
+                        <div class="one flex">
+                            <div>
+                                <img src="./img/menu/fries.webp" alt="Item Image">
+                            </div>
+                            <div>
+                                <h2>Fries</h2>
+                                <p>$5.50</p>
+                                <div class="quantity-controls flex">
+                                    <button>
+                                        <p>-</p>
+                                    </button>
+                                    <p>7</p>
+                                    <button>
+                                        <p>+</p>
+                                    </button>
+                                </div>
+                                <button>
+                                    <p>Remove</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="one prices right">
+                            <h3>$38.50</h3>
+                            <p>+ $4.25</p>
+                        </div>
+                    </div>
+                    <div class="cart-item flex">
+                        <div class="one flex">
+                            <div>
+                                <img src="./img/menu/water.webp" alt="Item Image">
+                            </div>
+                            <div>
+                                <h2>Drink</h2>
+                                <p>$3.00</p>
+                                <div class="quantity-controls flex">
+                                    <button>
+                                        <p>-</p>
+                                    </button>
+                                    <p>12</p>
+                                    <button>
+                                        <p>+</p>
+                                    </button>
+                                </div>
+                                <button>
+                                    <p>Remove</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="one prices right">
+                            <h3>$36.00</h3>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="flex">
+                        <div class="one">
+                            <h3>Subtotal</h3>
+                            <h4>Tax</h4>
+                            <h2>Total</h2>
+                        </div>
+                        <div class="one right">
+                            <h3>$157.00</h3>
+                            <h4>$12.56</h4>
+                            <h2>$169.56</h2>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="flex">
+                        <div class="one">
+                            <h2>Delivery Options</h2>
+                            <div>
+                                <div>
+                                    <input type="radio" id="delivery" name="delivery" value="delivery">
+                                    <label for="delivery">Delivery</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                                    <label for="pickup">Pickup</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="curbside" name="delivery" value="curbside">
+                                    <label for="curbside">Curbside Pickup</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one right">
+                            <button id="btn-checkout">
+                                <p>Checkout</p>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div id="copy-attr">
+                <p>&copy; 2024 Victorious Pizza</p>
+                <p>UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+            </div>
+        </footer>
+    </body>
+<script src="./script.js"></script>
+</html>
