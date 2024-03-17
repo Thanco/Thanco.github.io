@@ -94,7 +94,7 @@ const formSubmit = async (form) => {
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     object.allergens = object.allergens.split(',');
-    object.imageName = "default.jpg";
+    object.imageName = "default.webp";
     const json = JSON.stringify(object);
     console.log(json);
 
