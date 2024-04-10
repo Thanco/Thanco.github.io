@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Victorious Pizza</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="./index.html">
+                    <img src="./img/header/logo.webp" alt="Logo" id="logo-img">
+                </a>
+            </section>
+            <section>
+                <a id="main-nav-hamburger">
+                    <img src="./img/header/hamburger.webp" alt="Hamburger">
+                </a>
+            </section>
+            <nav id="main-nav-links" class="hide-nav-links">
+                <div>
+                    <div>
+                        <a href="./locations.html">
+                            <img src="./img/header/locations.webp" alt="Icon">
+                            <p>Locations</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./menu.html">
+                            <img src="./img/header/menu.webp" alt="Icon">
+                            <p>Menu</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./culture.html">
+                            <img src="./img/header/culture.webp" alt="Icon">
+                            <p>Culture</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./careers.html">
+                            <img src="./img/header/careers.webp" alt="Icon">
+                            <p id="current-page">Careers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./about-us.html">
+                            <img src="./img/header/about-us.webp" alt="Icon">
+                            <p>About Us</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./cart.html">
+                            <img src="./img/header/cart.webp" alt="Icon">
+                            <p>Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div id="careers-content">
+                <div class="flex-column">
+                    <section id="careers-benefits" class="three">
+                        <div>
+                            <h1>Join Our Team!</h1>
+                            <h2>Benefits</h2>
+                            <p>Working at Victorious Pizza comes with a variety of benefits, including health insurance, paid time off, and a 401k plan. We also offer a 50% discount on all food and drinks for our employees. We believe in taking care of our team members so they can take care of our customers and each other. Creating an environment where our employees can thrive is important to us and we are committed to providing the best experience for our employees and customers.</p>
+                        </div>
+                    </section>
+                    <section class="two">
+                        <h1>We're Hiring!</h1>
+                        <table>
+                            <tr>
+                                <th>Location</th>
+                                <th>Position</th>
+                            </tr>
+                            <tr>
+                                <td>Downtown</td>
+                                <td>Server</td>
+                            </tr>
+                            <tr>
+                                <td>Road St.</td>
+                                <td>Chef</td>
+                            </tr>
+                            <tr>
+                                <td>West End</td>
+                                <td>Manager</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+                <div id="career-application">
+                    <h2>Apply</h2>
+                    <form>
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name">
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+                            </li>
+                            <li>
+                                <label for="location">Location:</label>
+                                <select id="location" name="location">
+                                    <option value="location1">Downtown</option>
+                                    <option value="location2">Roat St.</option>
+                                    <option value="location3">West End</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="position">Position:</label>
+                                <select id="position" name="position">
+                                    <option value="position1">Server</option>
+                                    <option value="position2">Chef</option>
+                                    <option value="position3">Manager</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="resume">Resume:</label>
+                                <input type="file" id="resume" name="resume" accept="*.pdf">
+                            </li>
+                            <li>
+                                <input type="submit" value="Submit">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="copy-attr">
+                <p>&copy; 2024 Victorious Pizza</p>
+                <p>UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+            </div>
+        </footer>
+    </body>
+<script src="./script.js"></script>
+</html>
