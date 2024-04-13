@@ -1,19 +1,31 @@
 <form>
     <h3>Sauce</h3>
-    <input type="checkbox" id="sauce1" name="sauce" value="tomato">
+    <input type="checkbox" id="sauce1" name="sauces" value="tomato">
     <label for="sauce1">Tomato Sauce</label><br>
-    <input type="checkbox" id="sauce2" name="sauce" value="bbq">
+    <input type="checkbox" id="sauce2" name="sauces" value="bbq">
     <label for="sauce2">BBQ Sauce</label><br>
-    <input type="checkbox" id="sauce3" name="sauce" value="ranch">
+    <input type="checkbox" id="sauce3" name="sauces" value="ranch">
     <label for="sauce3">Ranch Sauce</label><br>
 
     <h3>Side</h3>
-    <select name="side" required>
-        <option value="fries">Fries</option>
-        <option value="salad">Salad</option>
-        <option value="none">None</option>
-    </select>
+    <input type="radio" id="fries" name="side" value="fries" required>
+    <label for="fries">Fries</label><br>
+    <input type="radio" id="salad" name="side" value="salad">
+    <label for="salad">Salad</label><br>
+    <input type="radio" id="none" name="side" value="none">
+    <label for="none">None</label><br>
 
+    <div class="quantity-controls flex">
+        <p>Quantity: </p>
+        <button class="${this.lowerName} btn-down">
+            <p>-</p>
+        </button>
+        <p>${cartItem.count}</p>
+        <button class="${this.lowerName} btn-up">
+            <p>+</p>
+        </button>
+    </div>
+    
     <h3>All Done?</h3>
     <input type="submit" value="Add to Cart">
 </form>

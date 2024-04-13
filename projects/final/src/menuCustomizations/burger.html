@@ -1,10 +1,10 @@
 <form>
     <h3>Type</h3>
-    <input type="radio" id="beef" name="burgerType" value="beef" checked required>
+    <input type="radio" id="beef" name="meat" value="beef" checked required>
     <label for="beef">Beef</label><br>
-    <input type="radio" id="chicken" name="burgerType" value="chicken">
+    <input type="radio" id="chicken" name="meat" value="chicken">
     <label for="chicken">Chicken</label><br>
-    <input type="radio" id="veggie" name="burgerType" value="veggie">
+    <input type="radio" id="veggie" name="meat" value="veggie">
     <label for="veggie">Veggie</label><br>
     
     <h3>Toppings</h3>
@@ -22,6 +22,17 @@
     <label for="bacon">Bacon</label><br>
     <input type="checkbox" id="pickles" name="extras" value="pickles">
     <label for="pickles">Pickles</label><br>
+
+    <div class="quantity-controls flex">
+        <p>Quantity: </p>
+        <button class="${this.lowerName} btn-down">
+            <p>-</p>
+        </button>
+        <p>${cartItem.count}</p>
+        <button class="${this.lowerName} btn-up">
+            <p>+</p>
+        </button>
+    </div>
     
     <h3>All Done?</h3>
     <input type="submit" value="Add to Cart">
