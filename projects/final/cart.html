@@ -60,88 +60,7 @@
 
         <main>
             <div id="cart-content">
-                <section>
-                    <div class="cart-item flex">
-                        <div class="one flex">
-                            <div>
-                                <img src="./img/menu/big-pizza.webp" alt="Item Image">
-                            </div>
-                            <div>
-                                <h2>Classic Pizza</h2>
-                                <p>$17.00</p>
-                                <div class="quantity-controls flex">
-                                    <button>
-                                        <p>-</p>
-                                    </button>
-                                    <p>4</p>
-                                    <button>
-                                        <p>+</p>
-                                    </button>
-                                </div>
-                                <button>
-                                    <p>Remove</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="one prices right">
-                            <h3>$68.00</h3>
-                            <p>+ $14.50</p>
-                        </div>
-                    </div>
-                    <div class="cart-item flex">
-                        <div class="one flex">
-                            <div>
-                                <img src="./img/menu/fries.webp" alt="Item Image">
-                            </div>
-                            <div>
-                                <h2>Fries</h2>
-                                <p>$5.50</p>
-                                <div class="quantity-controls flex">
-                                    <button>
-                                        <p>-</p>
-                                    </button>
-                                    <p>7</p>
-                                    <button>
-                                        <p>+</p>
-                                    </button>
-                                </div>
-                                <button>
-                                    <p>Remove</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="one prices right">
-                            <h3>$38.50</h3>
-                            <p>+ $4.25</p>
-                        </div>
-                    </div>
-                    <div class="cart-item flex">
-                        <div class="one flex">
-                            <div>
-                                <img src="./img/menu/water.webp" alt="Item Image">
-                            </div>
-                            <div>
-                                <h2>Drink</h2>
-                                <p>$3.00</p>
-                                <div class="quantity-controls flex">
-                                    <button>
-                                        <p>-</p>
-                                    </button>
-                                    <p>12</p>
-                                    <button>
-                                        <p>+</p>
-                                    </button>
-                                </div>
-                                <button>
-                                    <p>Remove</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="one prices right">
-                            <h3>$36.00</h3>
-                        </div>
-                    </div>
-                </section>
+                <section id="cart-items"></section>
                 <section>
                     <div class="flex">
                         <div class="one">
@@ -150,36 +69,38 @@
                             <h2>Total</h2>
                         </div>
                         <div class="one right">
-                            <h3>$157.00</h3>
-                            <h4>$12.56</h4>
-                            <h2>$169.56</h2>
+                            <h3 id="subtotal">$--</h3>
+                            <h4 id="tax">$--</h4>
+                            <h2 id="total">$--</h2>
                         </div>
                     </div>
                 </section>
                 <section>
                     <div class="flex">
+                    <form>
                         <div class="one">
                             <h2>Delivery Options</h2>
                             <div>
                                 <div>
-                                    <input type="radio" id="delivery" name="delivery" value="delivery">
-                                    <label for="delivery">Delivery</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                                    <input type="radio" id="pickup" name="delivery" value="pickup" checked required>
                                     <label for="pickup">Pickup</label>
                                 </div>
                                 <div>
                                     <input type="radio" id="curbside" name="delivery" value="curbside">
                                     <label for="curbside">Curbside Pickup</label>
                                 </div>
+                                <div>
+                                    <input type="radio" id="delivery" name="delivery" value="delivery">
+                                    <label for="delivery">Delivery</label>
+                                </div>
                             </div>
                         </div>
                         <div class="one right">
-                            <button id="btn-checkout">
+                            <button type="submit" id="btn-checkout">
                                 <p>Checkout</p>
                             </button>
                         </div>
+                    </form>
                     </div>
                 </section>
             </div>
@@ -193,4 +114,6 @@
         </footer>
     </body>
 <script src="./script.js"></script>
+<script src="./src/MenuItem.js"></script>
+<script src="./src/cartHandler.js"></script>
 </html>
