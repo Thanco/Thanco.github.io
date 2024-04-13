@@ -17,10 +17,9 @@ const addItemToCart = (item, customization, count) => {
     if (!count) {
         count = 1;
     }
-    const cartItem = cart.find(cartItem => cartItem.item.id === item.id);
+    const cartItem = cart.find(cartItem => cartItem.item.id === item.id && cartItem.customization === customization);
     const index = cart.indexOf(cartItem);
-    if (cartItem &&
-        cart.find(cartItem => cartItem.customization === customization)) {
+    if (cartItem) {
         cartItem.count += count;
         if (cartItem.count <= 0) {
             cart.splice(index, 1);
