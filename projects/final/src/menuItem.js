@@ -152,8 +152,6 @@ class MenuItem {
     }
 
     getCartItem(cartItem) {
-        console.log(this);
-        console.log(this.price);
         return `
             <div class="one flex">
                 <div>
@@ -181,7 +179,7 @@ class MenuItem {
                 </div>
             </div>
             <div class="one prices right">
-                <h3>${this.price * cartItem.count}</h3>
+                <h3>$${(this.price * cartItem.count).toFixed(2)}</h3>
             </div>
         `;
     }
