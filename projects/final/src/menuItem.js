@@ -188,12 +188,15 @@ class MenuItem {
 
     customizationOptionsDisplay = async () => {
         const request = fetch(`./src/menuCustomizations/${this.type}.html`)
-            .catch(error => console.log(error));
+            .catch(error => {
+                console.error(error);
+                return null;
+            });
         
         const form = document.createElement('form');
 
         const response = await request;
-        if (!response.ok) {
+        if (response == null || !response.ok) {
             form.innerHTML = '<p>Sorry, we are unable to customize this item at this time.</p>';
 
             const div = document.createElement('div');
@@ -236,7 +239,7 @@ class MenuItem {
 
             form.onsubmit = (e) => {
                 e.preventDefault();
-                this.addToCart(parseInt(p.innerHTML.split(' ')[1]));
+                this.addToCart(parseInt(p.innerHTML));
             };
 
             form.appendChild(button);
