@@ -1,7 +1,7 @@
 const menu = [];
 
 const loadMenuDatabase = async () => {
-    const menuResponse = await fetch('http://127.0.01:3000/api/menu');
+    const menuResponse = await fetch('https://victorious-pizza-node-server.onrender.com/api/menu');
     if (!menuResponse.ok) {
         throw new Error('Failed to fetch menu.');
     }

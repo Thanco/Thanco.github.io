@@ -1,4 +1,4 @@
-const serverURL = `http://127.0.01:3000`;
+const serverURL = `https://victorious-pizza-node-server.onrender.com`;
 const modal = document.getElementById('modal');
 const result = document.getElementById('form-result');
 
