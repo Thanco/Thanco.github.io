@@ -187,7 +187,7 @@ class MenuItem {
     }
 
     customizationOptionsDisplay = async () => {
-        const request = fetch(`./menuCustomizations/${this.type}.html`)
+        const request = fetch(`./src/menuCustomizations/${this.type}.html`)
             .catch(error => console.log(error));
         
         const form = document.createElement('form');
@@ -214,14 +214,14 @@ class MenuItem {
                 if (quantity <= 1) {
                     return;
                 }
-                p.innerHTML = `Quantity: ${quantity - 1}`;
+                p.innerHTML = quantity - 1;
             };
 
             const btnUp = document.createElement('button');
             btnUp.innerHTML = '+';
             btnUp.onclick = (e) => {
                 e.preventDefault();
-                p.innerHTML = `Quantity: ${parseInt(p.innerHTML) + 1}`;
+                p.innerHTML = parseInt(p.innerHTML) + 1;
             };
 
             div.appendChild(btnDown);
@@ -290,7 +290,6 @@ class MenuItem {
                 }
             });
             
-
             console.log(customization);
             this.addToCartCustom(JSON.stringify(customization), quantity);
         };

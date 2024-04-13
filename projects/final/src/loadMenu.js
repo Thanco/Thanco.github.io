@@ -21,8 +21,15 @@ const populateMenu = () => {
     });
 }
 
+const showMenuLoading = () => {
+    const divMenuItems = document.getElementById('menu-items');
+    divMenuItems.innerHTML = '<div class="center"><svg class="loading-circle" viewBox="250 250 500 500"></circle></svg></div>';
+}
+
 const refreshMenu = async () => {
-    await loadMenuDatabase();
+    const databaseRequest = loadMenuDatabase();
+    showMenuLoading();
+    await databaseRequest;
     populateMenu();
 };
 
