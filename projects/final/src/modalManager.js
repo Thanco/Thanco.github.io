@@ -148,7 +148,10 @@ const getModalForm = (item, type) => {
                 e.preventDefault();
                 closeModal();
             };
-            form.querySelector('#btn-delete-item').onclick = submitDeleteItem.bind(null, item);
+            form.querySelector('#btn-delete-item').onclick = (e) => {
+                e.preventDefault();
+                submitDeleteItem(item);
+            };
             addItemFormElement.appendChild(form);
             return addItemFormElement;
         default:
@@ -313,11 +316,12 @@ const submitDeleteItem = async (item) => {
         return;
     }
 
+    refreshMenu();
+    document.getElementById('menu-main-content').removeChild(document.getElementById('menu-item-details'));
     result.innerHTML = "Menu Item Deleted!";
     setTimeout(() => {
         result.style.display = "none";
         closeModal();
-        refreshMenu();
     }, 2000);
 };
 
