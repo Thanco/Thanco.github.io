@@ -312,12 +312,12 @@ const submitDeleteItem = async (item) => {
         result.innerHTML = "Failed to delete item.";
         return;
     }
-    refreshMenu();
 
     result.innerHTML = "Menu Item Deleted!";
     setTimeout(() => {
         result.style.display = "none";
         closeModal();
+        refreshMenu();
     }, 2000);
 };
 
